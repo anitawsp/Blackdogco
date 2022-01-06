@@ -1,0 +1,215 @@
+html {
+    background-color:#d3d3d3;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+    font-size: 150%;
+    background-color: white;
+    max-width: 1200px;
+    margin:0 auto;
+}
+a {
+    color: darkorange;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+a:hover {
+    color:#0fd297;
+}
+h1 {
+    font-size: 2.2em;
+    font-weight: 900;
+    color: #0fd297;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #0fd297;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+h3 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #0fd297;
+    margin: 50px 8%;
+}
+img {
+    max-width: 100%;
+}
+
+#wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2%;
+}
+#wrapper img {
+    width: 200px;
+    margin: 5% 0 5% 15%;
+}
+#navigation ul {
+    margin: 5% 15% 0 0;
+    list-style-type: none;
+    display: flex;
+    height: 70px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#navigation li {
+    padding: 10px;
+}
+
+#first {
+    width: 100%;
+    background-color: #ffe39a;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+    margin-bottom: 70px;
+}
+.button {
+    background-color: darkorange; 
+    color: white;
+    border-radius: 4px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.65em;
+    width: 100px;
+    margin-bottom: 5%;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15%;
+}
+#mainContent {
+    font-size: 0.65em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#animal {
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 17%;
+}
+#animal img {
+    width:  320px;
+    height: 320px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,.2);
+}
+.name {
+    font-style: italic;
+    font-weight: 500;
+    padding-bottom: 10%;
+}
+
+#touch {
+    background-color: #ffe39a;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input[type=text] {
+    margin-right: 20px;
+    padding: 12px 60px 12px 12px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+#footer {
+    font-size: 0.6em;
+    color: darkorange;
+    display: flex;
+    flex-direction: column;
+    margin: 0 17%;
+    padding-bottom: 10%;
+}
+#footer img {
+    width: 40%;
+}
+#logo {
+    font-weight: 900;
+    color: black;
+}
+#info ul {
+    list-style-type: none;
+    line-height: 1;
+    width: 200px;
+    padding-left: 0;
+}
+#footnavi ul {
+    list-style-type: none;
+    line-height: 1.5;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+#social img {
+    width:  30px;
+    height: 30px;
+}
+
+/* this is an example of a media query that is taking effect on devices that are 700px or wider. */
+
+@media (min-width: 700px) {
+    body {
+        font-size: 120%;
+        font-weight: 400;
+    }
+    #first {
+        display: grid;
+        grid-template-columns: 65% auto;
+        grid-gap: 0;
+    }
+    #first img {
+        width: 90%;
+        float: left;
+    }
+    #main {
+        justify-content: center;
+        margin-right: 25%;
+        margin-left: 0;
+    }
+    #animal {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 40px;
+        margin: 20px 8% 20px 8%;
+    }
+    #touch {
+        margin: 70px 0; 
+    }
+    #footer {
+        display: grid;
+        grid-template-columns: 30% auto 20% auto;
+        grid-gap: 40px;
+        margin: 0 8%;
+        padding-bottom: 8%;
+    }
+    #info ul {
+        list-style-type: none;
+        line-height: 2;
+    }
+    #footnavi ul {
+        line-height: 2;
+        display: inline-grid;
+    }
+}
+
+/* you can add as many media queries as you need. When you encounter a design break point, add a media query for that screen width, and adjust the design as needed by adding CSS rules to your media query. */
